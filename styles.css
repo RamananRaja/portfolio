@@ -1,0 +1,68 @@
+:root {
+    --col-blueBackground: rgb(2,32,68);
+    --col-BlueForeground: rgb(2, 42, 87);
+    --col-yellow: rgb(247, 174, 29);
+    --col-white: white;
+  }
+.main-wrapper {
+    height: 1350px;
+    width: 1350px;
+    background-color: var(--col-blueBackground);
+   
+    font-family: cursive;
+}
+.title {
+    text-align: center;
+    padding-top: 20px;
+    color: var(--col-white);
+}
+/*profile*/
+.card {
+    background-color: var(--col-BlueForeground);
+    height: auto;
+    width: auto;
+    margin: 2%;    
+    padding: 2%; 
+    display: flex;
+    flex-direction: row;
+
+}
+.profile-details .profile-name {
+    color: var(--col-yellow);
+    font-weight:500;
+    font-size: 35px;
+}
+.profile-details {
+    color: var(--col-white);
+    font-weight:400;
+    font-size: 20px;
+    width: 50%;
+}
+ .profile-image{
+    width: 50%;
+    float: right;
+}
+img {
+    height: 250px;
+    width: 250px;
+    float: right;
+}
+/*personal*/
+.left {
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    font-size: 20px;
+}
+.left-left {
+    color: var(--col-yellow);
+    width: 40%;
+}
+.left-right {
+    color: var(--col-white);
+    width: 40%;
+}
+.right {
+    width: 30%;
+    font-size: 20px;
+}

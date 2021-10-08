@@ -1,0 +1,6 @@
+blue-background - rgb(2,32,68)
+blue-foregrond - rgb(1,35,73)
+Yellow - rgb(253,191,70)
+blue-title - rgb(55,190,165)
+blue-tile - rgb(23,61,87)
+white - rgb(254,254,254)
