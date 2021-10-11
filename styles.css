@@ -1,31 +1,116 @@
 :root {
     --col-blueBackground: rgb(2,32,68);
-    --col-BlueForeground: rgb(2, 42, 87);
+    --col-BlueForeground: rgb(25, 105, 197);
     --col-yellow: rgb(247, 174, 29);
     --col-white: white;
-  }
+}
+html {
+    scroll-behavior: smooth;
+    height: auto;
+    width: auto;
+}
 .main-wrapper {
-    height: 1350px;
-    width: 1350px;
-    background-color: var(--col-blueBackground);
-   
+    background-color: rgba(247, 174, 29);
+   letter-spacing: 0.5;
     font-family: cursive;
+    border-radius: 10px;
 }
 .title {
     text-align: center;
     padding-top: 20px;
-    color: var(--col-white);
 }
-/*profile*/
+.card-title {
+    color: var(--col-yellow);
+    font-size: x-large;
+    font-weight: 700;
+}
 .card {
     background-color: var(--col-BlueForeground);
     height: auto;
     width: auto;
     margin: 2%;    
-    padding: 2%; 
+    padding: 2%;
+    border: 3px solid var(--col-white);
+    border-radius: 20px;
+    margin-left: 50px;
+}
+/*navbar*/
+.wrapper {
+    display: flex;
+    flex-direction: column ;
+    left:65px;
+    justify-content: center;
+    position: relative;
+}
+.menu {
+    margin-bottom: 5px;
+}
+.list-item {
+    height: 20px;
+    width: 30px;
+    padding: 2px;
+    margin: 4px 0;
+}
+.list-item .fa {
+    text-align: center;
+    line-height: 40px;
+}
+.list-item a span {
+    width: 0;
+    left: 40px;
+    padding:0;
+    position: absolute;
+    overflow: hidden;
+    letter-spacing: 0.6;
+    white-space: nowrap;
+    line-height: 40px;
+    transition: 0.25s;
+}
+.list-item a {
+    width: 40px;
+    height: 40px;
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    position: relative;
+}
+.list-item a:hover  {
+    width: 50px;
+    padding: 0 20px;
+    overflow: visible;    
+}
+.ramanan {
+    list-style-image: url(./asset/oop.png);
+ }
+.ramanan :hover {
+    background-color: red;
+    color: black;
+}
+.ramanan span {
+    background-color: white;
+}
+.personal {
+    list-style-image: url(./asset/cricket.png);
+}
+/*navbar2*/
+.navbar {
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   position: fixed;
+   top: 30px;
+    left: 13px;
+}
+.navbar img {
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/*profile*/
+.card-profile {
     display: flex;
     flex-direction: row;
-
 }
 .profile-details .profile-name {
     color: var(--col-yellow);
@@ -42,10 +127,11 @@
     width: 50%;
     float: right;
 }
-img {
+.profile-image img {
     height: 250px;
-    width: 250px;
+    width: 300px;
     float: right;
+    border-radius: 20px;
 }
 /*personal*/
 .left {
@@ -65,4 +151,109 @@ img {
 .right {
     width: 30%;
     font-size: 20px;
+}
+/*academic*/
+.card-academic {
+    display: flex;
+    flex-direction: row;
+}
+.row-card {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding:5px
+}
+.sub-card-title {
+    width: 200px;
+    height: auto;
+    background-color: var(--col-yellow);
+    border-radius: 5px;
+    color: var(--col-white);
+    text-align: center;
+    font-size: x-large;
+}
+.sub-card-data {
+    width: 200px;
+    height: auto;
+    background-color: var(--col-white);
+    border-radius: 5px;
+    text-align: center;
+    font-size: x-large;    
+}
+/*area of interest*/
+.area-of-interest-card {
+    background-color: var(--col-BlueForeground);
+    height: auto;
+    width: auto;
+    margin: 2%;    
+    padding: 2%; 
+    display: flex;
+    flex-direction: column;
+    border: 3px solid white;
+    border-radius: 20px;
+    margin-left: 50px;
+}
+.padding-data {
+    padding-left: 50px;
+    padding-right: 5px;
+    color: var(--col-white);
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+}
+.area-of-interest-card img {
+    width:50px;
+    height: 50px;
+}
+/*skillset*/
+.skillset-row {
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    font-size: 20px;
+    padding-left: 50px;
+    display: flex;
+    justify-content: center;
+}
+.skillset-title {
+    width: 40%;
+    height: 50px;
+    background-color: var(--col-yellow);
+    border-radius: 5px;
+    color: var(--col-white);
+    text-align: center;
+    font-size: x-large;    
+}
+.skillset-data {
+    width: 60%;
+    height: auto;
+    background-color: var(--col-white);
+    border-radius: 5px;
+    text-align: center;
+    font-size: x-large;    
+}
+/*academic project*/
+.project {
+    
+    padding-right: 30px;
+    color: var(--col-white);
+}
+.project-title {
+    font-size: 30px;
+    padding-left: 25px;
+}
+.project-data {
+    font-size: 20px;
+    padding-left: 50px;
+    text-indent: 85px;
+}
+/*Top*/
+.goToTop {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    margin-right: 30px;
+}
+.goToTop img {
+    height: 50px;
 }

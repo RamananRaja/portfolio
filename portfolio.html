@@ -6,10 +6,38 @@
   <body>
     <div class="main-wrapper">
       <h1 class="title">PORTFOLIO</h1>
+      <!--navbar 
+      <div class="wrapper">
+        <ul class="menu">
+          
+          <li class="list-item ramanan">
+            <a class=" fa" href="#">
+              <span>Ramanan Rajamohan</span>
+            </a>
+          </li>
+          
+          <li class="list-item personal">
+            <a class=" fa" href="#">
+              <span>Personal</span>
+            </a>
+          </li>
+          
+        </ul>
+      </div>-->
+      <!--navbar2-->
+      <div class="navbar">
+        <a href="#profile"><img src="./asset/profile.png" /></a>
+        <a href="#personal"><img src="./asset/personal.png" /></a>
+        <a href="#academic"><img src="./asset/academic.png" /></a>
+        <a href="#areaOfInterest"><img src="./asset/interest.png" /></a>
+        <a href="#skillset"><img src="./asset/skills.png" /></a>
+        <a href="#academicProject"><img src="asset/project.png" /></a>
+        <a href="#academicAcheivement"><img src="asset/achievement1.png" /></a>
+      </div>
       <!--profile card-->
-      <div class="card">
+      <div class="card card-profile">
         <!--profile details-->
-        <div class="profile-details">
+        <div id="profile" class="profile-details">
           <p class="profile-name">Ramanan Rajamohan</p>
           <p>Master of Computer Applications</p>
           <p>PSG College of Technology</p>
@@ -17,11 +45,14 @@
         </div>
         <!--profile picture-->
         <div class="profile-image">
-          <img src="asset/IMG_20210710_161224.jpg" />
+          <img src="asset/ramanan.JPG" />
         </div>
       </div>
-      <!--Personal-->
-      <div class="card">
+      <!--personal-->
+      <div id="personal" class="card card-academic">
+        <!--<p class="card-title" style="display: flex; flex-direction: column">
+          Personal
+        </p>-->
         <div class="left">
           <div class="left-left">
             <p>Father's Name</p>
@@ -48,6 +79,163 @@
             <p>Cuddalore - 607004</p>
           </div>
         </div>
+      </div>
+      <!--academic-->
+      <div id="academic" class="card">
+        <p class="card-title">Academic</p>
+        <!--heading-->
+        <div class="row-card">
+          <div class="sub-card-title">Course</div>
+          <div class="sub-card-title">Institution</div>
+          <div class="sub-card-title">Board</div>
+          <div class="sub-card-title">Year of passing</div>
+          <div class="sub-card-title">Marks(%)</div>
+        </div>
+        <!--mca-->
+        <div class="row-card">
+          <div class="sub-card-title">MCA</div>
+          <div class="sub-card-data">PSG College of Technology</div>
+          <div class="sub-card-data">Anna University</div>
+          <div class="sub-card-data">2021</div>
+          <div class="sub-card-data">71.7</div>
+        </div>
+        <!--bca-->
+        <div class="row-card">
+          <div class="sub-card-title">BCA</div>
+          <div class="sub-card-data">Achariya Arts and science college</div>
+          <div class="sub-card-data">Pondicherry University</div>
+          <div class="sub-card-data">2018</div>
+          <div class="sub-card-data">61.2</div>
+        </div>
+        <!--hsc-->
+        <div class="row-card">
+          <div class="sub-card-title">HSC</div>
+          <div class="sub-card-data">CK School of practical knowledge</div>
+          <div class="sub-card-data">State board</div>
+          <div class="sub-card-data">2015</div>
+          <div class="sub-card-data">66.6</div>
+        </div>
+        <!--sslc-->
+        <div class="row-card">
+          <div class="sub-card-title">SSLC</div>
+          <div class="sub-card-data">Lakshmi Chordia mem hr sec school</div>
+          <div class="sub-card-data">State board</div>
+          <div class="sub-card-data">2013</div>
+          <div class="sub-card-data">86.8</div>
+        </div>
+      </div>
+      <!--area of interest-->
+      <div id="areaOfInterest" class="area-of-interest-card">
+        <p class="card-title">Area of interest</p>
+        <div class="padding-data">
+          <img src="./asset/web.png" />&nbsp;&nbsp;&nbsp;&nbsp;
+          <p>Web development</p>
+        </div>
+        <div class="padding-data">
+          <img src="./asset/app.png" />&nbsp;&nbsp;&nbsp;&nbsp;
+          <p>Android App development</p>
+        </div>
+        <div class="padding-data">
+          <img src="./asset/oop.png" />&nbsp;&nbsp;&nbsp;&nbsp;
+          <p>Object Oriented Programming</p>
+        </div>
+      </div>
+      <!--skillset-->
+      <div id="skillset" class="card">
+        <p class="card-title">Skillset</p>
+        <div class="skillset-row">
+          <p class="skillset-title">Languages</p>
+          &nbsp;&nbsp;&nbsp;
+          <p class="skillset-data">C, C++, Java</p>
+        </div>
+        <div class="skillset-row">
+          <p class="skillset-title">Web technologies</p>
+          &nbsp;&nbsp;&nbsp;
+          <p class="skillset-data">HTML, CSS, JAVASCRIPT</p>
+        </div>
+        <div class="skillset-row">
+          <p class="skillset-title">Database</p>
+          &nbsp;&nbsp;&nbsp;
+          <p class="skillset-data">MySql, MongoDB</p>
+        </div>
+        <div class="skillset-row">
+          <p class="skillset-title">Operating Systems</p>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <p class="skillset-data">Windows</p>
+        </div>
+        <div class="skillset-row">
+          <p class="skillset-title">Frameworks</p>
+          &nbsp;&nbsp;&nbsp;
+          <p class="skillset-data">Angular, ExpressJs, Android, Bulma</p>
+        </div>
+        <div class="skillset-row">
+          <p class="skillset-title">Backends</p>
+          &nbsp;&nbsp;&nbsp;
+          <p class="skillset-data">NodeJs</p>
+        </div>
+        <div class="skillset-row">
+          <p class="skillset-title">Tools</p>
+          &nbsp;&nbsp;&nbsp;
+          <p class="skillset-data">
+            Android studio, Visual studio, eclipse, Postman, Netbeans
+          </p>
+        </div>
+      </div>
+      <!--academic project-->
+      <div id="academicProject" class="card">
+        <p class="card-title">Academic project</p>
+        <div class="project">
+          <div class="padding-data">
+            <img src="asset/cricket.png" />
+            <p class="project-title">Fantasy Cricket</p>
+          </div>
+          <p class="project-data">
+            A real time Fantasy Cricket web application, to connect cricket
+            lovers who are interested in creating dream team on live cricket
+            match, where users can make their own team of players and play with
+            other users while the live cricket match is been held. Developed
+            using MongoDB, ExpressJS, Angular, NodeJS(MEAN Stack)
+          </p>
+        </div>
+        <div class="project">
+          <div class="padding-data">
+            <img src="./asset/task.png" />
+            <p class="project-title">Task manager</p>
+          </div>
+
+          <p class="project-data">
+            A Real Time Single Page Web Application for managing users tasks
+            (like ToDo). Developed using MongoDB, ExpressJS, Angular,
+            NodeJS(MEAN Stack)
+          </p>
+        </div>
+      </div>
+      <!--academic achievement-->
+      <div id="academicAcheivement" class="card">
+        <p class="card-title">Academic achievement</p>
+        <div class="project">
+          <div class="padding-data">
+            <img src="./asset/achievement.png" />&nbsp;&nbsp;&nbsp;&nbsp;
+            <p>
+              Won 1st prize in TECHNICAL CONNECTION conducted by Department of
+              Computer Applications, Pondicherry University
+            </p>
+          </div>
+          <div class="padding-data">
+            <img src="./asset/achievement.png" />&nbsp;&nbsp;&nbsp;&nbsp;
+            <p>Done IPT at “LENOVO INDIA Pvt Ltd”, Puducherry</p>
+          </div>
+          <div class="padding-data">
+            <img src="./asset/achievement.png" />&nbsp;&nbsp;&nbsp;&nbsp;
+            <p>
+              Co-ordinated event named Technical quiz as a part of DIGITRIX
+              2015, Achariya Arts and Science College
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="goToTop">
+        <a href="#"><img src="./asset/up.png" /></a>
       </div>
     </div>
   </body>
